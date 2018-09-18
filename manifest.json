@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "DevAssistant",
+	"description": "Enabling Devs!",
+	"version": "1",
+	"author": "Random1",
+	"browser_action": {
+		"default_icon": "tab-icon.png",
+		"default_title": "Sumologic Dev Assistant",
+		"default_popup": "popup.html"
+	},
+	"permissions": ["activeTab"]
+}

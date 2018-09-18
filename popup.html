@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sumologic Dev Assistant</title>
+    <link rel="stylesheet" type="text/css" href="tabs_style.css">
+    <script>
+      function change_tab(id)
+      {
+   	document.getElementById("page_content").innerHTML=document.getElementById(id+"_desc").innerHTML;
+   	document.getElementById("NotifyMe").className="notselected";
+   	document.getElementById("Utilities").className="notselected";
+   	document.getElementById("Bookmarks").className="notselected";
+  	document.getElementById(id).className="selected";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="main_content">
+
+      <li class="selected" id="NotifyMe" onclick="change_tab(this.id);">NotifyMe!</li>
+      <li class="notselected" id="Utilities" onclick="change_tab(this.id);">Utilities</li>
+      <li class="notselected" id="Bookmarks" onclick="change_tab(this.id);">Bookmarks</li>
+     
+      <div class='hidden_desc' id="page1_desc">
+        <h2>Page 1</h2>
+        skdlskdlksldkl ldklkslk
+      </div>
+
+      <div class='hidden_desc' id="page2_desc">
+        <h2>Page 2</h2>
+        Hello this is Page 2 description and this is just a sample text .This is the demo of Multiple Tab In Single Page Using JavaScript and CSS.
+      </div>
+     
+      <div class='hidden_desc' id="page3_desc">
+        <h2>Page 3</h2>
+        Hello this is Page 3 description and this is just a sample text .This is the demo of Multiple Tab In Single Page Using JavaScript and CSS.
+      </div>
+     
+      <div id="page_content">
+        <h2>Page 1</h2>
+        Hello this is Page 1 description and this is just a sample text .This is the demo of Multiple Tab In Single Page Using JavaScript and CSS. 
+      </div>
+     
+    </div>
+   
+  </body>
+</html>
